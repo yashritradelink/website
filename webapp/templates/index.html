@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    
+    <meta charset="utf-8">
+    <title>Welcome to Yashri Tradelink </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <meta name="google-site-verification" content="2xXQgp_drXQKd5nxL0stol8T3xwj1OYbQ3OYx06xDnU" />
+
+    <!-- Favicon -->
+    <link href="{% static 'webapp/img/favicon.ico' %}" rel='icon'>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'webapp/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel='stylesheet'>
+    <link href="{% static 'webapp/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel='stylesheet'>
+    <link href="{% static 'webapp/lib/lightbox/css/lightbox.min.css' %}" rel='stylesheet'>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'webapp/css/bootstrap.min.css' %}" rel='stylesheet'>
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'webapp/css/style.css' %}" rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-5 d-none d-lg-block">
+        <div class="row gx-5">
+            <div class="col-lg-4 text-center py-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-1"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase fw-bold">Our Office</h6>
+                        <span>B-406, Shri Stavan Apartment, Opp. Chitrakut Society, Near Nigam Bus Stand, Ghodasar, Ahmedabad, Gujarat- 380050.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase fw-bold">Email Us</h6>
+                        <span><a href = "mailto:yashritradelink@gmail.com?cc=patel.nirav15.5@gmail.com&subject=Email inquiry to Yashri Tradelink &body= Here by I would like to get contacted by Yashri Tradelink and my contact details are as..... ">
+                            yashritradelink@gmail.com
+                            </a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase fw-bold">Call Us</h6>
+                        <span>Rachana Patel- +91 8866830914</span><br>
+                        <span>Nirav Patel- +91 9825079357</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
+        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
+            <a href="{% url 'index' %}" class="navbar-brand">
+                <h1 class="m-0 display-4 text-uppercase text-white"><i class="bi bi text-primary me-2" ><img src="{% static 'webapp/img/yashril5.png' %}" alt="logo"></i><small style="font-size: 1.0 em;" >Yashri</small><small style="font-size: 0.5em"> Tradelink </small></small></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                    <a href="{% url 'service' %}" class="nav-item nav-link">Products</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="{% url 'pe' %}" class="dropdown-item">Polyethylene</a>
+                            <a href="{% url 'pp' %}" class="dropdown-item">Polypropylene</a>
+                            <a href="{% url 'pet' %}" class="dropdown-item">Polyethylene Terephthalate</a>
+                            <a href="{% url 'ps' %}" class="dropdown-item">Polystyrene</a>
+                            <a href="{% url 'masterbatch' %}" class="dropdown-item">Masterbatch & ADDITIVES</a>
+                            <a href="{% url 'recycled' %}" class="dropdown-item">Recycled</a>
+                        </div>
+                    </div>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    <a href="" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Get A Quote <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src= "{% static 'webapp/img/carousel-1.jpg' %}" alt='Image'>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <i class="fa fa-4x text-primary mb-4 d-none d-sm-block"></i>
+                            <h1 class="display-2 text-uppercase text-white mb-md-4">Welcome to Yashri Tradelink</h1>
+                            <h5 class="text-uppercase text-white mb-md-4">An International Trading house in polymers and quality chemicals</h5>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'webapp/img/carousel-2.jpg' %}" alt='Image'>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <i class="fa fa-4x text-primary mb-4 d-none d-sm-block"></i>
+                            <h1 class="display-2 text-uppercase text-white mb-md-4">Trust built on commitment</h1>
+                            <h5 class="text-uppercase text-white mb-md-4">More than 20 years of experience in the petrochemicals industry</h5>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'webapp/img/carousel-3.jpg' %}" alt='Image'>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <i class="fa fa-4x text-primary mb-4 d-none d-sm-block"></i>
+                            <h1 class="display-2 text-uppercase text-white mb-md-4">Customers are first</h1>
+                            <h5 class="text-uppercase text-white mb-md-4">Assured quality, commitment and timely delivery</h5>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h1 class="display-5 text-uppercase mb-4">We are <span class="text-primary">Yashri Tradelink</span> dealings in all type of polymers and chemicals</h1>
+                <p class="mb-4">Yashri Tradelink is an international trading house and dealing in superior quality of polymers and chemicals. Over the years, we have gained strong foothold in the market due to high quality, competitive prices and time lined delivery schedules of our range. Our base in Ahmedabad, Gujarat and branch offices in Mumbai and Jaipur help us in catering to our clients in an effective manner.</p>
+                <!-- <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor</p> -->
+                <div class="row gx-5 py-2">
+                    <div class="col-sm-6 mb-2">
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Perfect Planning</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Professional Work</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Fast Delivery Process</p>
+                    </div>
+                    <div class="col-sm-6 mb-2">
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Realtime Market Update</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Fast Supply Chain Network</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Multiple Sourcing Options</p>
+                    </div>
+                </div>
+                <p class="mb-4">The challenging spirit of our working team is key in driving our organization towards more expansion and success. We appreciate our clients and partners as it's through our fruitful partnerships that our reputation is growing in polymer distribution.</p>
+                <img src= "{% static 'webapp/img/signature.jpg' %}" alt=''>
+            </div>
+            <div class="col-lg-5 pb-5" style="min-height: 400px;">
+                <div class="position-relative bg-dark-radial h-100 ms-5">
+                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="{% static 'webapp/img/about.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+    <!-- Services Start -->
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4"><span class="text-primary">Product Categories</span> </h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="{% static 'webapp/img/service-1.jpg' %}" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x bi-dice-1 text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">POLYETHYLENE (PE) </h4>
+                        <p>Polyethylene (PE) is a thermoplastic polymer with variable crystalline structure and an extremely large range of applications depending on the particular type. It is one of the most widely produced plastics in the world.</p>
+                        <a class="btn text-primary" href="{% url 'pe' %}">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="{% static 'webapp/img/service-2.jpg' %}" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x bi-dice-2 text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">POLYPROPYLENE (PP) </h4>
+                        <p>Polypropylene (PP), Also known as polypropene, is a thermoplastic polymer used in a wide variety of applications including packaging and labeling, textiles, stationery, plastic parts and reusable containers.</p>
+                        <a class="btn text-primary" href="{% url 'pp' %}">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="{% static 'webapp/img/service-3.jpg' %}" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x bi-dice-3 text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">POLYETHYLENE TEREPHTHALATE (PET)</h4>
+                        <p>Polyethylene terephthalate, commonly abbreviated PET, PETE, is the most common thermoplastic polymer resin of the polyester family. Usually clear or green, sinks in water, rigid.</p>
+                        <a class="btn text-primary" href="{% url 'pet' %}">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="{% static 'webapp/img/service-4.jpg' %}" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x bi-dice-4 text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">POLYSTYRENE (PS)</h4>
+                        <p>Polystyrene (PS) is a synthetic aromatic polymer made from the monomer styrene. General-purpose polystyrene is clear, hard, and rather brittle. Semi rigid, low gloss, resistance to heat, chemicals, grease and oil, versatile barrier to moisture.</p>
+                        <a class="btn text-primary" href="{% url 'ps' %}">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="{% static 'webapp/img/service-5.jpg' %}" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x bi-dice-5 text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">MASTERBATCH & ADDITIVES</h4>
+                        <p>Masterbatch & Additive is a solid or liquid additive for plastic used for coloring plastics. Masterbatch allows the processor to colour raw polymer economically during the plastics manufacturing process.</p>
+                        <a class="btn text-primary" href="{% url 'masterbatch' %}">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="{% static 'webapp/img/service-6.jpg' %}" alt="">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x bi-dice-6 text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">RECYCLED</h4>
+                        <p>We have Reprocessed/Recycled Plastic Granules are granules that are made by recycling plastic waste material during the manufacturing of different products. These are the common delivery form of thermoplastic materials used by manufacturers of raw plastic materials.</p>
+                        <a class="btn text-primary" href="{% url 'recycled' %}">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="mb-4">
+                    <h1 class="display-5 text-uppercase mb-4">Request A <span class="text-primary">Call Back</span></h1>
+                </div>
+                <p class="mb-5">To receive call back from us, please fill the form. We will provide you a prompt service or on sooner basis. We are providing call service on all weekdays excluding public holidays and post working hours. Our executive will provides you a detailed information on your queries.</p>
+                <a class="btn btn-primary py-3 px-5" href="{% url 'contact' %}">Get A Quote</a>
+            </div>
+            <div class="col-lg-8">
+                <div class="bg-light text-center p-5">
+                    <form   action="sendmail" method="post">
+                        {% csrf_token %}
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" name="username" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0" name="email" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text"
+                                        class="form-control border-0 datetimepicker-input"
+                                        placeholder="Call Back Date" data-target="#date" data-toggle="datetimepicker" name="date" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text"
+                                        class="form-control border-0 datetimepicker-input"
+                                        placeholder="Call Back Time" data-target="#time" data-toggle="datetimepicker" name= "time" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control border-0" placeholder="Subject" name="subject" style="height: 55px;">
+                            </div>    
+                            <div class="col-12">
+                                <textarea class="form-control border-0" rows="5" name="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit" value="sendmail">Submit Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+    <!-- Portfolio Start -->
+    <!-- <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Some Of Our <span class="text-primary">Popular</span> Dream Projects</h1>
+        </div>
+        <div class="row gx-5">
+            <div class="col-12 text-center">
+                <div class="d-inline-block bg-dark-radial text-center pt-4 px-5 mb-5">
+                    <ul class="list-inline mb-0" id="portfolio-flters">
+                        <li class="btn btn-outline-primary bg-white p-2 active mx-2 mb-4" data-filter="*">
+                            <img src="{% static 'webapp/img/portfolio-1.jpg' %}" style="width: 150px; height: 100px;">
+                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
+                                <h6 class="text-white text-uppercase m-0">All</h6>
+                            </div>
+                        </li>
+                        <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".first">
+                            <img src="{% static 'webapp/img/portfolio-2.jpg' %}" style="width: 150px; height: 100px;">
+                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
+                                <h6 class="text-white text-uppercase m-0">Construction</h6>
+                            </div>
+                        </li>
+                        <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".second">
+                            <img src="{% static 'webapp/img/portfolio-3.jpg' %}" style="width: 150px; height: 100px;">
+                            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center" style="background: rgba(4, 15, 40, .3);">
+                                <h6 class="text-white text-uppercase m-0">Renovation</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5 portfolio-container">
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="{% static 'webapp/img/portfolio-1.jpg' %}" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase">Project Name</p>
+                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
+                    </a>
+                    <a class="portfolio-btn" href="{% static 'webapp/img/portfolio-1.jpg' %}" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="{% static 'webapp/img/portfolio-2.jpg' %}" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase">Project Name</p>
+                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
+                    </a>
+                    <a class="portfolio-btn" href="{% static 'webapp/img/portfolio-2.jpg' %}" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="{% static 'webapp/img/portfolio-3.jpg' %}" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase">Project Name</p>
+                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
+                    </a>
+                    <a class="portfolio-btn" href="{% static 'webapp/img/portfolio-3.jpg' %}" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="{% static 'webapp/img/portfolio-4.jpg' %}" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase">Project Name</p>
+                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
+                    </a>
+                    <a class="portfolio-btn" href="{% static 'webapp/img/portfolio-4.jpg' %}" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="{% static 'webapp/img/portfolio-5.jpg' %}" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase">Project Name</p>
+                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
+                    </a>
+                    <a class="portfolio-btn" href="{% static 'webapp/img/portfolio-5.jpg' %}" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="{% static 'webapp/img/portfolio-6.jpg' %}" alt="">
+                    <a class="portfolio-title shadow-sm" href="">
+                        <p class="h4 text-uppercase">Project Name</p>
+                        <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</span>
+                    </a>
+                    <a class="portfolio-btn" href="{% static 'webapp/img/portfolio-6.jpg' %}" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Portfolio End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span> Workers</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="row g-0">
+                    <div class="col-10" style="min-height: 300px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100" src="{% static 'webapp/img/team-1.jpg' %}" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-light p-4">
+                            <h4 class="text-uppercase">Adam Phillips</h4>
+                            <span>CEO & Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="row g-0">
+                    <div class="col-10" style="min-height: 300px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100" src="{% static 'webapp/img/team-2.jpg' %}" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-light p-4">
+                            <h4 class="text-uppercase">Dylan Adams</h4>
+                            <span>Civil Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="row g-0">
+                    <div class="col-10" style="min-height: 300px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100" src="{% static 'webapp/img/team-3.jpg' %}" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-light p-4">
+                            <h4 class="text-uppercase">Jhon Doe</h4>
+                            <span>Interior Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="row g-0">
+                    <div class="col-10" style="min-height: 300px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100" src="{% static 'webapp/img/team-4.jpg' %}" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-light p-4">
+                            <h4 class="text-uppercase">Josh Dunn</h4>
+                            <span>Painter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">What Our <span class="text-primary">Happy Cleints</span> Say!!!</h1>
+        </div>
+        <div class="row gx-0 align-items-center">
+            <div class="col-xl-4 col-lg-5 d-none d-lg-block">
+                <img class="img-fluid w-100 h-100" src="{% static 'webapp/img/testimonial.jpg' %}">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-12">
+                <div class="testimonial bg-light">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="row gx-4 align-items-center">
+                            <div class="col-xl-4 col-lg-5 col-md-5">
+                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="{% static 'webapp/img/testimonial-1.jpg' %}" alt="">
+                            </div>
+                            <div class="col-xl-8 col-lg-7 col-md-7">
+                                <h4 class="text-uppercase mb-0">Client Name</h4>
+                                <p>Profession</p>
+                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> Dolores sed duo
+                                    clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                                    lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit
+                                    ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="row gx-4 align-items-center">
+                            <div class="col-xl-4 col-lg-5 col-md-5">
+                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="{% static 'webapp/img/testimonial-2.jpg' %}" alt="">
+                            </div>
+                            <div class="col-xl-8 col-lg-7 col-md-7">
+                                <h4 class="text-uppercase mb-0">Client Name</h4>
+                                <p>Profession</p>
+                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> Dolores sed duo
+                                    clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
+                                    lorem magna ut labore et tempor diam tempor erat. Erat dolor rebum sit
+                                    ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <!-- <div class="container-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Latest <span class="text-primary">Articles</span> From Our Blog Post</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light">
+                    <img class="img-fluid" src="{% static 'webapp/img/blog-1.jpg' %}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-2" src="{% static 'webapp/img/user.jpg' %}" width="35" height="35" alt="">
+                                <span>John Doe</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
+                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light">
+                    <img class="img-fluid" src="{% static 'webapp/img/blog-2.jpg' %}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-2" src="{% static 'webapp/img/user.jpg' %}" width="35" height="35" alt="">
+                                <span>John Doe</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
+                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light">
+                    <img class="img-fluid" src="{% static 'webapp/img/blog-3.jpg' %}" alt="">
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-2" src="{% static 'webapp/img/user.jpg' %}" width="35" height="35" alt="">
+                                <span>John Doe</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="ms-3"><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</span>
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Rebum diam clita lorem erat magna est erat</h4>
+                        <a class="text-uppercase fw-bold" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Blog End -->
+    
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="{% url 'index' %}" class="navbar-brand">
+                    <h1 class="m-0 display-4 text-uppercase text-white"><i class="bi text-primary me-2"></i><img src="{% static 'webapp/img/yashril5.png' %}" alt="logo"></i><small style="font-size: 1.0 em;" >Yashri</small><small style="font-size: 0.5em"> Tradelink </small></small></h1>
+                </a>
+                <p>Providing our customers with wide range of eco-friendly and superior quality products and services by adopting latest technologies and optimum supply chain management.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>B-406, Shri Stavan Apartment, Opp. Chitrakut Society, Near Nigam Bus Stand, Ghodasar, Ahmedabad, Gujarat- 380050.</p>
+                <p><i class="fa fa-phone-alt me-2"></i>Rachana Patel- +91 8866830914</p>
+                <p><i class="fa fa-phone-alt me-2"></i>Nirav Patel- +91 9825079357</p>
+                <p><i class="fa fa-envelope me-2"></i>yashritradelink@gmail.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://twitter.com/yashritradelink"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="https://www.facebook.com/profile.php?id=100087025037957"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="http://linkedin.com/in/rachanaben-patel-176b88254"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="https://www.instagram.com/yashritradelink/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-white text-uppercase mb-4">Quick Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white-50 mb-2" href="{% url 'index' %}"><i class="fa fa-angle-right me-2"></i>Home</a>
+                            <a class="text-white-50 mb-2" href="{% url 'about' %}"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                            <a class="text-white-50 mb-2" href="{% url 'service' %}"><i class="fa fa-angle-right me-2"></i>Our Products</a>
+                            <!-- <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a> -->
+                            <a class="text-white-50" href="{% url 'contact' %}"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-6">
+                        <h4 class="text-white text-uppercase mb-4">Popular Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Products</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                            <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-sm-12">
+                        <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">www.yashritradelink.com</a>. All Rights Reserved.</p>
+            </div>
+            <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
+                <p class="mb-0">Designed by <a class="text-dark" href="https://yashritradelink.com">Yashri Tradelink</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'webapp/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'webapp/lib/lightbox/js/lightbox.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'webapp/js/main.js' %}"></script>
+</body>
+
+</html>
